@@ -49,8 +49,6 @@ public: Lista_s_cl()
 
 public: void Add(int valor)
 {
-	
-
 	No* novo = static_cast<No*>(malloc(sizeof(No)));
 	novo->v = valor;
 
@@ -74,11 +72,11 @@ public: int Count()
 	if (FirstOrDefaut == NULL)
 		return 0;
 	else
-		do 
+		do
 		{
 			count++;
 			iterador = iterador->proxNo;
-		} while (iterador != LastOrDefault);
+		} while (iterador != NULL);
 		return count;
 }
 
@@ -94,7 +92,6 @@ public: void ApagarLista()
 			tmp = iterador;
 			iterador = iterador->proxNo;
 			free(tmp);
-		} while (iterador != LastOrDefault);
+		} while (iterador != NULL);
 }
-
 };

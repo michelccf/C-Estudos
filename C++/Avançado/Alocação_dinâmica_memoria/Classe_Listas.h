@@ -4,8 +4,8 @@ class No
 {
 
 public: int v;
-static No *proxNo;
-static No *antNo;
+public:  No *proxNo;
+public:  No *antNo;
 
 public: No()
 {
@@ -33,18 +33,13 @@ public: No * anteriorNo()
 	return this->proxNo;
 }
 
-public: void liberarMemNo()
-{
-	free(this);
-}
-
 
 };
 
 class Lista_s_cl
 {
-	No* FirstOrDefaut;
-	No* LastOrDefault;
+public: No* FirstOrDefaut;
+public: No* LastOrDefault;
 
 public: Lista_s_cl()
 {
@@ -54,6 +49,8 @@ public: Lista_s_cl()
 
 public: void Add(int valor)
 {
+	
+
 	No* novo = static_cast<No*>(malloc(sizeof(No)));
 	novo->v = valor;
 

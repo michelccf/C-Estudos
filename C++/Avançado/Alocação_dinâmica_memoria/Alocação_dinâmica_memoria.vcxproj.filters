@@ -27,9 +27,6 @@
     <ClInclude Include="Structs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Classe_Listas.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ListaGenerica.h">
       <Filter>Header Files</Filter>
     </ClInclude>

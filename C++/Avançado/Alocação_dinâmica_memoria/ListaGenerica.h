@@ -7,6 +7,14 @@ template<class T> class No
 	No<T>* Ant;
 	T Dados;
 	template<class T> friend class Lista;
+
+public: No<T>()
+	{
+		T* newDados = (static_cast<T*>(malloc(sizeof(T))));
+		new (newDados) T();
+		this->Dados = *newDados;
+		
+	}
 };
 
 #pragma once
@@ -16,7 +24,7 @@ private: No<T>* First;
 private: No<T>* Last;
 private: int tamanho;
 
-		 
+
 
 
 public: Lista<T>()
@@ -29,12 +37,12 @@ public: Lista<T>()
 public: void Add(T* _dados)
 {
 	No<T>* novo = static_cast<No<T>*>(malloc(sizeof(No<T>)));
+	new(novo) No<T>();
 	novo->Dados = *_dados;
 	novo->Prox = NULL;
 
 	if (First == NULL)
 	{
-		No<T>* novo = static_cast<No<T>*>(malloc(sizeof(No<T>)));
 		novo->Ant = NULL;
 		First = novo;
 		Last = novo;
@@ -68,7 +76,7 @@ public: void RemoveAt(int index)
 	No<T>* _no = First;
 	if (index > 0)
 	{
-		for (i = 0; i < index; i++)
+		for (int i = 0; i < index; i++)
 		{
 			_no = _no->Prox;
 		}
@@ -81,7 +89,7 @@ public: void RemoveAt(int index)
 		if (_no->Prox != NULL)
 			_no->Ant->Prox = _no->Prox;
 		else
-			_no->Ant->Prox = NUL;
+			_no->Ant->Prox = NULL;
 	}
 }
 

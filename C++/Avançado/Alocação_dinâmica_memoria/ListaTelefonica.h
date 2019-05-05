@@ -6,5 +6,11 @@ public:
 	std::string Nome;
 	std::string Telefone;
 	std::string Celular;
+	ListaTelefonica()
+	{
+		Nome = "";
+		Telefone = "";
+		Celular = "";
+	}
 };
 

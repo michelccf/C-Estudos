@@ -1,15 +1,2 @@
 ﻿  Alocação_dinâmica_memoria.cpp
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\classe_listas.h(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(9): error C2989: 'No': class template has already been declared as a non-class template
-  c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\classe_listas.h(4): note: see declaration of 'No'
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(3): error C3857: 'No': multiple template parameter lists are not allowed
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(13): error C2059: syntax error: '<'
-  c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(128): note: see reference to class template instantiation 'Lista<T>' being compiled
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(13): error C2238: unexpected token(s) preceding ';'
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(14): error C2059: syntax error: '<'
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(14): error C2238: unexpected token(s) preceding ';'
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(27): error C2760: syntax error: unexpected token '<', expected 'declaration'
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(52): error C2760: syntax error: unexpected token '<', expected 'declaration'
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(64): error C2760: syntax error: unexpected token '<', expected 'declaration'
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(96): error C2760: syntax error: unexpected token '<', expected 'declaration'
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(109): error C2760: syntax error: unexpected token '<', expected 'declaration'
+  Alocação_dinâmica_memoria.vcxproj -> C:\Users\Michel\Desktop\Estudo de linguagens\C++\Avançado\Alocação_dinâmica_memoria\Debug\Alocação_dinâmica_memoria.exe

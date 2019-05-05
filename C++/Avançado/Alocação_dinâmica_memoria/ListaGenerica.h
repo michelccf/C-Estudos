@@ -1,3 +1,4 @@
+
 #include <iostream>
 
 template<class T> class No
@@ -5,15 +6,18 @@ template<class T> class No
 	No<T>* Prox;
 	No<T>* Ant;
 	T Dados;
-
+	template<class T> friend class Lista;
 };
 
+#pragma once
 template<class T> class Lista
 {
 private: No<T>* First;
 private: No<T>* Last;
 private: int tamanho;
-		
+
+		 
+
 
 public: Lista<T>()
 {
@@ -22,10 +26,10 @@ public: Lista<T>()
 }
 
 
-public: void Add(T _dados)
+public: void Add(T* _dados)
 {
 	No<T>* novo = static_cast<No<T>*>(malloc(sizeof(No<T>)));
-	novo->Dados = _dados;
+	novo->Dados = *_dados;
 	novo->Prox = NULL;
 
 	if (First == NULL)
@@ -77,7 +81,7 @@ public: void RemoveAt(int index)
 		if (_no->Prox != NULL)
 			_no->Ant->Prox = _no->Prox;
 		else
-			_no->Ant->Prox = NUL; L
+			_no->Ant->Prox = NUL;
 	}
 }
 
@@ -109,7 +113,7 @@ public: T GetElement(int index)
 	No<T>* _no = First;
 	if (index > 0)
 	{
-		for (i = 0; i < index; i++)
+		for (int i = 0; i < index; i++)
 		{
 			_no = _no->Prox;
 		}

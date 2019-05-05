@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{7b8d5b53-4eb0-418d-8a25-9d3e0ceba494}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -29,6 +32,9 @@
     </ClInclude>
     <ClInclude Include="ListaGenerica.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListaTelefonica.h">
+      <Filter>Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

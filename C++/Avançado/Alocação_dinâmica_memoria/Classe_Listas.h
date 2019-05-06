@@ -4,8 +4,8 @@ class No
 {
 
 public: int v;
-static No *proxNo;
-static No *antNo;
+public:  No *proxNo;
+public:  No *antNo;
 
 public: No()
 {
@@ -33,18 +33,13 @@ public: No * anteriorNo()
 	return this->proxNo;
 }
 
-public: void liberarMemNo()
-{
-	free(this);
-}
-
 
 };
 
 class Lista_s_cl
 {
-	No* FirstOrDefaut;
-	No* LastOrDefault;
+public: No* FirstOrDefaut;
+public: No* LastOrDefault;
 
 public: Lista_s_cl()
 {
@@ -77,11 +72,11 @@ public: int Count()
 	if (FirstOrDefaut == NULL)
 		return 0;
 	else
-		do 
+		do
 		{
 			count++;
 			iterador = iterador->proxNo;
-		} while (iterador != LastOrDefault);
+		} while (iterador != NULL);
 		return count;
 }
 
@@ -97,7 +92,6 @@ public: void ApagarLista()
 			tmp = iterador;
 			iterador = iterador->proxNo;
 			free(tmp);
-		} while (iterador != LastOrDefault);
+		} while (iterador != NULL);
 }
-
 };

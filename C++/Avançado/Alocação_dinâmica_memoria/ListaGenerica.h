@@ -98,7 +98,7 @@ public: Lista<T> RemoveAt(int index)
 
 public: T FirstOrDefault()
 {
-	return First->Dados;
+	return First->Dados; 
 }
 
 public: T LastOrDefault()

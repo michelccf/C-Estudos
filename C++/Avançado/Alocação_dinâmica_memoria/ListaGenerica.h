@@ -128,7 +128,7 @@ public: int Count()
 		length++;
 		_no = _no->Prox;
 	} while (_no->Prox != NULL);
-	return length;
+	return length+1;
 }
 
 public: T GetElement(int index)

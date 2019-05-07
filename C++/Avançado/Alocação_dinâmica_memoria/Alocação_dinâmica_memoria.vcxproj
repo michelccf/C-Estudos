@@ -147,7 +147,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Classe_Listas.h" />
     <ClInclude Include="ListaGenerica.h" />
     <ClInclude Include="ListaTelefonica.h" />
     <ClInclude Include="stdafx.h" />

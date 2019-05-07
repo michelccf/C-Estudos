@@ -22,7 +22,8 @@ template<class T> class Lista
 {
 private: No<T>* First;
 private: No<T>* Last;
-private: int tamanho;
+private: int tamanhoBytes;
+private: int length;
 
 
 
@@ -67,11 +68,12 @@ public: void RemoveAll(int index)
 	{
 		_temp = _no;
 		_no = _no->Prox;
+		free(_temp->Dados);
 		free(_temp);
 	} while (_no->Prox != NULL);
 }
 
-public: void RemoveAt(int index)
+public: Lista<T> RemoveAt(int index)
 {
 	No<T>* _no = First;
 	if (index > 0)
@@ -91,11 +93,12 @@ public: void RemoveAt(int index)
 		else
 			_no->Ant->Prox = NULL;
 	}
+	return *this;
 }
 
 public: T FirstOrDefault()
 {
-	return First->Dados;
+	return First->Dados; 
 }
 
 public: T LastOrDefault()
@@ -106,13 +109,26 @@ public: T LastOrDefault()
 public: float Size()
 {
 	No<T>* _no = First;
-	tamanho = 0;
+	tamanhoBytes = 0;
 	do
 	{
-		tamanho += sizeof(_no);
+		tamanhoBytes += sizeof(_no);
+		_no = _no->Prox;
 	} while (_no->Prox != NULL);
 
-	return tamanho;
+	return tamanhoBytes;
+}
+
+public: int Count()
+{
+	No<T>* _no = First;
+	length = 0;
+	do
+	{
+		length++;
+		_no = _no->Prox;
+	} while (_no->Prox != NULL);
+	return length+1;
 }
 
 public: T GetElement(int index)

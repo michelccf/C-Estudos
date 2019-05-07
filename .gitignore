@@ -1,0 +1,6 @@
+*VC.opendb
+*.log
+*.suo
+
+*Debug/
+

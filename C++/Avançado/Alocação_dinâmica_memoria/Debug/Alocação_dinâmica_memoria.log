@@ -1,6 +1,7 @@
-﻿  Alocação_dinâmica_memoria.cpp
-c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(119): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-  c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(110): note: while compiling class template member function 'float Lista<ListaTelefonica>::Size(void)'
-  c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\alocação_dinâmica_memoria.cpp(105): note: see reference to function template instantiation 'float Lista<ListaTelefonica>::Size(void)' being compiled
-  c:\users\michel\desktop\estudo de linguagens\c++\avançado\alocação_dinâmica_memoria\alocação_dinâmica_memoria.cpp(82): note: see reference to class template instantiation 'Lista<ListaTelefonica>' being compiled
-  Alocação_dinâmica_memoria.vcxproj -> C:\Users\Michel\Desktop\Estudo de linguagens\C++\Avançado\Alocação_dinâmica_memoria\Debug\Alocação_dinâmica_memoria.exe
+﻿  stdafx.cpp
+  Alocação_dinâmica_memoria.cpp
+c:\users\gpsdev\desktop\pessoal\c-estudos\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(119): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  c:\users\gpsdev\desktop\pessoal\c-estudos\c++\avançado\alocação_dinâmica_memoria\listagenerica.h(110): note: while compiling class template member function 'float Lista<ListaTelefonica>::Size(void)'
+  c:\users\gpsdev\desktop\pessoal\c-estudos\c++\avançado\alocação_dinâmica_memoria\alocação_dinâmica_memoria.cpp(105): note: see reference to function template instantiation 'float Lista<ListaTelefonica>::Size(void)' being compiled
+  c:\users\gpsdev\desktop\pessoal\c-estudos\c++\avançado\alocação_dinâmica_memoria\alocação_dinâmica_memoria.cpp(82): note: see reference to class template instantiation 'Lista<ListaTelefonica>' being compiled
+  Alocação_dinâmica_memoria.vcxproj -> C:\Users\GPSDev\Desktop\Pessoal\C-Estudos\C++\Avançado\Alocação_dinâmica_memoria\Debug\Alocação_dinâmica_memoria.exe

@@ -56,7 +56,7 @@ public: void Add(T* _dados)
 	}
 };
 
-public: void RemoveAll(int index)
+public: void RemoveAll()
 {
 
 	if (First == NULL)
@@ -82,6 +82,7 @@ public: Lista<T> RemoveAt(int index)
 		{
 			_no = _no->Prox;
 		}
+		No<T>* _temp = _no;
 
 		if (_no->Ant != NULL)
 			_no->Prox->Ant = _no->Ant;
@@ -92,6 +93,8 @@ public: Lista<T> RemoveAt(int index)
 			_no->Ant->Prox = _no->Prox;
 		else
 			_no->Ant->Prox = NULL;
+
+		free(_temp);
 	}
 	return *this;
 }
